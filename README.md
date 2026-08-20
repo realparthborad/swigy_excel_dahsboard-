@@ -1,67 +1,189 @@
-🍔 Swiggy Order Data Analysis — Excel Dashboard
+# 🍔 Swiggy Order Data Analysis — Excel Dashboard
 
-An end-to-end Excel analysis of nearly 2 lakh (197,430) Swiggy food orders, transforming raw order-level data into a live, interactive dashboard using PivotTables and PivotCharts. This project digs into sales trends, food preferences, quarterly performance, and geography to understand how India orders food online.
+An end-to-end Excel analysis of nearly 2 lakh (197,430) Swiggy food orders, transforming raw order-level data into an interactive dashboard using PivotTables and PivotCharts. This project explores sales trends, food preferences, quarterly performance, categories, and geography to understand how India orders food online.
 
-📌 Project Overview
+## 📌 Project Overview
 
-Food delivery platforms generate massive volumes of transactional data every day — but the real value lies in turning that into insight. This project takes a raw Swiggy order dataset (state, city, restaurant, dish, price, rating, date, etc.) and builds a fully interactive Excel workbook answering questions like:
+Food delivery platforms generate massive volumes of transactional data every day, but the real value lies in turning that data into actionable insights.
 
-How much revenue did Swiggy generate, and what's the average order value?
-Is India's online food demand more Veg or Non-Veg?
-Which months, days, and quarters see the highest sales?
-Which states and cities drive the most revenue?
-How are dish categories (Main Course, Desserts, Snacks, etc.) performing?
-🗂️ Dataset
-Detail	Value
-Records	197,430 orders
-Columns	14 (State, City, Order Date, Day, Quarter, Week, Restaurant Name, Location, Category, Dish Name, Food Type, Price (INR), Rating, Rating Count)
-Time Period	Jan 2025 – Aug 2025
-Coverage	27 Indian states, multiple cities
-Currency	INR
+This project takes a raw Swiggy order dataset containing state, city, restaurant, dish, price, rating, date, and other attributes and transforms it into a structured Excel dashboard.
 
-The raw data lives in the Swiggy Data sheet. All analysis is built on top of it using PivotTables, so the entire workbook refreshes with one click if the source data changes.
+The analysis answers questions such as:
 
-🧮 What's Inside the Workbook
-Sheet	Purpose
-Swiggy Data	Raw/cleaned order-level dataset (source of truth)
-ANALYSIS	PivotTables powering every KPI and chart — KPIs, monthly/day/quarter trends, food type split, state & top-5-city sales
-DASHBOARD	Consolidated visual dashboard combining all charts and KPI cards in one view
+* How much revenue did Swiggy generate?
+* What is the Average Order Value (AOV)?
+* Is India's online food demand more Veg or Non-Veg?
+* Which months, days, and quarters generate the highest sales?
+* Which states and cities contribute the most revenue?
+* How are different food categories performing?
 
-Each analysis block pairs a PivotTable with a corresponding PivotChart, and the DASHBOARD sheet ties them together for at-a-glance business reporting.
+## 🗂️ Dataset
 
-🔑 Key Insights
-Total sales of ₹5.30 Cr across 197,430 orders, with an Average Order Value (AOV) of ₹268.5.
-Average customer rating stands strong at 4.34/5, backed by 55.9 lakh+ cumulative rating counts — a healthy trust signal.
-Veg dominates demand, making up ~72% of orders vs. ~28% for Non-Veg — a clear preference in the platform's order mix.
-Q2 (Apr–Jun) was the strongest quarter (₹1.99 Cr, ~37.5% of sales), closely followed by Q1 (₹1.97 Cr, ~37.1%); Q3 tapered off to ~25.4%.
-Saturday is the biggest order day (₹77.8L), followed closely by Thursday and Friday — clear weekend/late-week ordering behavior.
-"Recommended" is the most-ordered category by a wide margin (24,100 orders), showing customers lean heavily on platform recommendations.
-Karnataka leads all states in sales (₹54.6L), and Bengaluru is the top revenue city, ahead of Lucknow, Hyderabad, Mumbai, and New Delhi in the top-5 city ranking.
-🛠️ Tools & Techniques Used
-Microsoft Excel
-PivotTables & PivotCharts
-KPI card design (Total Sales, AOV, Avg Rating, Order Count)
-Data Cleaning (date parsing, category standardization, null handling)
-Trend analysis (monthly / daily / quarterly)
-Geographic sales breakdown (state & city level)
-Dashboard consolidation for executive reporting
-🎯 Skills Demonstrated
-Data cleaning & preprocessing at scale (~200K rows)
-Exploratory Data Analysis (EDA) in Excel
-KPI definition and dashboard design
-Time-series trend analysis (month/day/quarter)
-Geographic and categorical segmentation
-Business insight generation from raw transactional data
-📁 File
-Swiggy_Raw_Data_Excel.xlsx — the complete, interactive workbook (raw data + pivots + charts + dashboard)
-🚀 How to Use
-Open Swiggy_Raw_Data_Excel.xlsx in Excel.
-Start on the DASHBOARD sheet for a quick executive overview.
-Dive into ANALYSIS to explore individual PivotTables (monthly trend, food type, day trend, quarter, state, top-5 cities).
-Check Swiggy Data for the full raw dataset.
-Refresh all PivotTables (Data → Refresh All) if new data is added.
-🙋 About
+| Detail         | Value                            |
+| -------------- | -------------------------------- |
+| Records        | 197,430 orders                   |
+| Columns        | 14                               |
+| Time Period    | January 2025 – August 2025       |
+| States Covered | 27 Indian states                 |
+| Currency       | INR                              |
+| Data Type      | Food delivery order transactions |
 
-This project was built as a hands-on Excel data analysis exercise to demonstrate how large-scale raw food-delivery data can be transformed into clear, actionable business insights — no code required, just structured thinking and the right Excel tools.
+### Dataset Columns
 
-Feel free to explore, fork the idea, or reach out with feedback!
+* State
+* City
+* Order Date
+* Day
+* Quarter
+* Week
+* Restaurant Name
+* Location
+* Category
+* Dish Name
+* Food Type
+* Price (INR)
+* Rating
+* Rating Count
+
+The raw dataset is available in the **Swiggy Data** sheet and acts as the source of truth for the analysis.
+
+## 🧮 Workbook Structure
+
+### 1. Swiggy Data
+
+Contains the raw and cleaned order-level dataset used as the primary data source.
+
+### 2. ANALYSIS
+
+Contains the PivotTables and supporting analysis used to generate:
+
+* KPI metrics
+* Monthly sales trends
+* Daily sales trends
+* Quarterly performance
+* Veg vs Non-Veg analysis
+* State-level sales
+* Top 5 cities by sales
+* Food category performance
+
+### 3. DASHBOARD
+
+A consolidated interactive dashboard containing KPI cards, PivotCharts, and visual summaries for quick business reporting.
+
+## 🔑 Key Insights
+
+* **Total Sales:** ₹5.30 Cr
+* **Total Orders:** 197,430
+* **Average Order Value (AOV):** ₹268.5
+* **Average Customer Rating:** 4.34/5
+* **Cumulative Rating Count:** 55.9 lakh+
+* **Veg Orders:** ~72%
+* **Non-Veg Orders:** ~28%
+
+### Quarterly Performance
+
+* **Q2:** ₹1.99 Cr — approximately 37.5% of total sales
+* **Q1:** ₹1.97 Cr — approximately 37.1% of total sales
+* **Q3:** approximately 25.4% of total sales
+
+Q2 was the strongest quarter, closely followed by Q1.
+
+### Day-Wise Performance
+
+**Saturday** generated the highest sales at approximately **₹77.8L**, followed by Thursday and Friday. This indicates stronger food-ordering activity toward the end of the week and weekend.
+
+### Food Preferences
+
+Veg food dominates the order mix, accounting for approximately **72% of orders**, compared with around **28% for Non-Veg**.
+
+### Category Performance
+
+**Recommended** was the most-ordered category, with approximately **24,100 orders**, indicating that customers frequently rely on platform recommendations when selecting food.
+
+### Geographic Performance
+
+* **Karnataka** was the highest-revenue state with approximately **₹54.6L** in sales.
+* **Bengaluru** was the leading city by revenue.
+* Other leading cities included **Lucknow, Hyderabad, Mumbai, and New Delhi**.
+
+## 🛠️ Tools & Techniques Used
+
+* Microsoft Excel
+* PivotTables
+* PivotCharts
+* KPI Cards
+* Data Cleaning & Preprocessing
+* Date Parsing
+* Category Standardization
+* Null Value Handling
+* Time-Series Analysis
+* Monthly, Daily & Quarterly Trend Analysis
+* State & City-Level Analysis
+* Food Category Segmentation
+* Dashboard Design
+* Business Insight Generation
+
+## 🎯 Skills Demonstrated
+
+This project demonstrates practical skills in:
+
+* Data cleaning and preprocessing at scale (~200K rows)
+* Exploratory Data Analysis (EDA) using Excel
+* KPI definition and dashboard development
+* Time-series analysis
+* Geographic sales analysis
+* Customer preference analysis
+* Category-level performance analysis
+* PivotTable and PivotChart development
+* Business storytelling and insight generation
+* Executive dashboard design
+
+## 📊 Dashboard Features
+
+The interactive dashboard provides a high-level view of business performance through:
+
+* Total Sales KPI
+* Average Order Value KPI
+* Average Rating KPI
+* Total Order Count KPI
+* Monthly Sales Trend
+* Day-Wise Sales Trend
+* Quarterly Sales Analysis
+* Veg vs Non-Veg Order Split
+* State-Wise Sales Analysis
+* Top 5 Cities by Revenue
+* Category-Level Order Analysis
+
+The workbook is built using PivotTables and PivotCharts, allowing the analysis to be refreshed when the underlying source data changes.
+
+## 📁 Project File
+
+**Swiggy_Raw_Data_Excel.xlsx**
+
+The workbook contains:
+
+* Raw/cleaned order data
+* PivotTables
+* PivotCharts
+* Analysis sheets
+* Interactive dashboard
+
+## 🚀 How to Use
+
+1. Open `Swiggy_Raw_Data_Excel.xlsx` in Microsoft Excel.
+2. Start with the **DASHBOARD** sheet for the executive overview.
+3. Navigate to **ANALYSIS** to explore the individual PivotTables and charts.
+4. Check **Swiggy Data** to view the complete order-level dataset.
+5. If new data is added, use **Data → Refresh All** in Excel to refresh the PivotTables and dashboard.
+
+## 🙋 About the Project
+
+This project was created as a hands-on Excel data analysis exercise to demonstrate how large-scale raw food-delivery transaction data can be transformed into meaningful business insights.
+
+The project focuses on practical data analytics without programming, using structured data cleaning, PivotTables, PivotCharts, KPI development, and dashboard design.
+
+The goal is to turn nearly 2 lakh raw food orders into a clear, interactive, and business-focused analytical dashboard.
+
+---
+
+⭐ **If you find this project useful, feel free to explore the workbook, fork the idea, and share your feedback.**
